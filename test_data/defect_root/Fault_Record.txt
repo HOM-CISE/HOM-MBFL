@@ -1,0 +1,5 @@
+Line 52: Original: Positive_RA_Alt_Thresh[2] = 640;   Fault: Positive_RA_Alt_Thresh[2] = 640+50;
+Line 58:   Original: return Positive_RA_Alt_Thresh[Alt_Layer_Value];   Fault: return Positive_RA_Alt_Thresh[0];
+Line 63:   Original: return (Climb_Inhibit ? Up_Separation + NOZCROSS : Up_Separation);   Fault: return (Climb_Inhibit ? Up_Separation + MINSEP /* operand mutation NOZCROSS */ : Up_Separation);
+Line 72:   Original: upward_preferred = Inhibit_Biased_Climb() > Down_Separation;   Fault: upward_preferred = Inhibit_Biased_Climb() >= Down_Separation;
+Line 120:   Original: intent_not_known = Two_of_Three_Reports_Valid && Other_RAC == NO_INTENT;   Fault: intent_not_known = Two_of_Three_Reports_Valid || Other_RAC == NO_INTENT; /* logic change */
