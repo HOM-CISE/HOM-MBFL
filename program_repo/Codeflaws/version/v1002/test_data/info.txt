@@ -1,0 +1,4 @@
+./new/Program/1/8-B-bug-37890-37891
+./new/Test_case/8-B-bug-37890-37891
+8-B-37890.c
+8-B-37891.c

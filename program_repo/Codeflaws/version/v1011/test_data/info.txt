@@ -1,0 +1,4 @@
+./new/Program/1/7-B-bug-30901-31431
+./new/Test_case/7-B-bug-30901-31431
+7-B-30901.c
+7-B-31431.c
