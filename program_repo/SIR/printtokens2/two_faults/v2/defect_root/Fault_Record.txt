@@ -1,0 +1,2 @@
+Line 358:   Original:          if(isdigit(*(str+i)))   Fault:        if(isdigit(*(str+i+1)))
+Line 386:   Original:      return(FALSE);   Fault:      return(TRUE);    /* wrong return value */

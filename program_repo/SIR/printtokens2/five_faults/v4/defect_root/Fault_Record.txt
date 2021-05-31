@@ -1,0 +1,5 @@
+Line 179:   Original:    if(is_spec_symbol(ch1)==TRUE)     /* if end character is special_symbol */   Fault:    if(is_spec_symbol(ch1)==FALSE)     /* if end character is special_symbol */
+Line 214:   Original:          return(FALSE);   Fault:          return(TRUE);
+Line 268:   Original:  if(type==identifier)   Fault:  if(type=identifier)
+Line 323:   Original:        return(FALSE);   Fault:      return(TRUE);    /* wrong return value */
+Line 358:   Original:        if(isdigit(*(str+i)))   Fault:        if(isdigit(*(str+i+1)))

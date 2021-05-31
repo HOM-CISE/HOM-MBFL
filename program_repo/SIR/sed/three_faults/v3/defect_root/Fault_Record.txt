@@ -1,0 +1,3 @@
+Line 914:   Original:   cmd->global = false;   Fault:   cmd->global = true;
+Line 3471:   Original: 	      if (!no_default_output)   Fault: 	      if (no_default_output)
+Line 4600:   Original:   if (size && fwrite(ptr, size, nmemb, stream) != nmemb)   Fault:   if (size && fwrite(ptr, size, nmemb, stream) == nmemb)

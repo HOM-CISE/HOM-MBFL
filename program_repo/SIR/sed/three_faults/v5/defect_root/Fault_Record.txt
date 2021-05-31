@@ -1,0 +1,3 @@
+Line 872:   Original:       if (!pending_mb)   Fault:       if (pending_mb)
+Line 1385:   Original:       if (ch == '!')   Fault:       if (ch = '!')
+Line 2509:   Original:   if (result <= 0)    Fault:   if (result < 0)

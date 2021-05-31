@@ -1,0 +1,1 @@
+Line 2776:   Original:   for (cur_cmd = vec->v, n = vec->v_length; n--; cur_cmd++)   Fault:   for (cur_cmd = vec->v, n = vec->v_length; --n; cur_cmd++)

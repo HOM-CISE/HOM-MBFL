@@ -1,0 +1,4 @@
+Line 602:   Original:       num = num * 10 + ch - '0';   Fault:       num = num + 10 + ch - '0';
+Line 885:   Original: 	      else if (ch != '\n' && ch != slash)   Fault: 	      else if (ch != '\n' && ch == slash)
+Line 1099:   Original:   text_end = base + length;   Fault:   text_end = base + length - 1;
+Line 1365:   Original: 	  if (a.addr_type == ADDR_IS_STEP   Fault: 	  if (a.addr_type = ADDR_IS_STEP

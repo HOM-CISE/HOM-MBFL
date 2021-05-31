@@ -1,0 +1,2 @@
+Line 885:   Original: 	      else if (ch != '\n' && ch != slash)   Fault: 	      else if (ch != '\n' && ch == slash)
+Line 7084:   Original:   if (!regex)   Fault:   if (regex)

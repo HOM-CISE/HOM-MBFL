@@ -1,0 +1,4 @@
+Line 151:   Original:   for (j=0;j<=80;j++)          /* initial the buffer   */   Fault:   for (j=0;j<=80;j+=2)          /* initial the buffer   */
+Line 179:   Original:    if(is_spec_symbol(ch1)==TRUE)     /* if end character is special_symbol */   Fault:    if(is_spec_symbol(ch1)==FALSE)     /* if end character is special_symbol */
+Line 225:   Original:  if(ch ==' ' || ch=='\n' || ch==59) return(TRUE);    Fault:  if(ch ==' ' || ch=='\t' || ch==59) return(TRUE); 
+Line 361:   Original:          return(FALSE);   Fault:          return(TRUE);

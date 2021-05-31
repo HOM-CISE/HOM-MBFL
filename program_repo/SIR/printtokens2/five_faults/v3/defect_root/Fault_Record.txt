@@ -1,0 +1,5 @@
+Line 151:   Original:   for (j=0;j<=80;j++)          /* initial the buffer   */   Fault:   for (j=0;j<=80;j+=2)          /* initial the buffer   */
+Line 179:   Original:    if(is_spec_symbol(ch1)==TRUE)     /* if end character is special_symbol */   Fault:    if(is_spec_symbol(ch1)==FALSE)     /* if end character is special_symbol */
+Line 218:   Original:    { if(ch=='\n')     /* for comment until meet end of line */   Fault:    { if(ch=='\n' || ch==' ')     /* for comment until meet end of line */
+Line 225:   Original:  if(ch ==' ' || ch=='\n' || ch==59) return(TRUE);    Fault:  if(ch ==' ' || ch=='\n' || ch==59 || ch == '\t' /* added code */) return(TRUE); 
+Line 358:   Original:        if(isdigit(*(str+i)))   Fault:        if(isdigit(*(str+i+1)))

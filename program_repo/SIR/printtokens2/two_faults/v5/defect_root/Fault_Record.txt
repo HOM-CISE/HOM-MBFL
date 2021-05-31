@@ -1,0 +1,2 @@
+Line 218:   Original:    { if(ch=='\n')     /* for comment until meet end of line */   Fault:    { if(ch=='\n' || ch=='\t')     /* for comment until meet end of line */
+Line 225:   Original:  if(ch ==' ' || ch=='\n' || ch==59) return(TRUE);   Fault:  if(ch ==' ' || ch=='\n' || ch==59 || ch == '\t' /* added code */) return(TRUE); 

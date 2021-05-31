@@ -1,0 +1,4 @@
+Line 51:   Original: Positive_RA_Alt_Thresh[1] = 500;   Fault: Positive_RA_Alt_Thresh[1] = 550; /* constant mutation */
+Line 52: Original: Positive_RA_Alt_Thresh[2] = 640;   Fault: Positive_RA_Alt_Thresh[2] = 640+50;
+Line 72:   Original: upward_preferred = Inhibit_Biased_Climb() > Down_Separation;   Fault: upward_preferred = Inhibit_Biased_Climb() >= Down_Separation;
+Line 118:   Original:   enabled = High_Confidence && (Own_Tracked_Alt_Rate <= OLEV) && (Cur_Vertical_Sep > MAXALTDIFF);   Fault: enabled = High_Confidence && (Own_Tracked_Alt_Rate <= OLEV); /* && (Cur_Vertical_Sep > MAXALTDIFF); missing code */

@@ -1,0 +1,2 @@
+Line 602:   Original:       num = num * 10 + ch - '0';   Fault:       num = num + 10 + ch - '0';
+Line 1099:   Original:   text_end = base + length;   Fault:   text_end = base + length - 1;

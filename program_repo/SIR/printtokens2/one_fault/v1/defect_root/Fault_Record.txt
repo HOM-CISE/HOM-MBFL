@@ -1,0 +1,1 @@
+Line 218:   Original:    { if(ch=='\n')     /* for comment until meet end of line */    Fault:    { if(ch=='\n' || ch == '\t')     /* for comment until meet end of line */

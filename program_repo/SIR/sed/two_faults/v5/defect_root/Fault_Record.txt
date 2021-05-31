@@ -1,0 +1,2 @@
+Line 2513:   Original:   if (b[result - 1] == '\n')   Fault:   if (b[result - 1] = '\n')
+Line 3109:   Original:   bool again = true;   Fault:   bool again = false;

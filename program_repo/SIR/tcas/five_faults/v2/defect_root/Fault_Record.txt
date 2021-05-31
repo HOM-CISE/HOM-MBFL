@@ -1,0 +1,5 @@
+Line 50:   Original: Positive_RA_Alt_Thresh[0] = 400;   Fault: Positive_RA_Alt_Thresh[0] = 400+1;
+Line 53:   Original: Positive_RA_Alt_Thresh[3] = 740;   Fault: Positive_RA_Alt_Thresh[3] = 700; /* constant mutation */
+Line 104:   Original: return (Own_Tracked_Alt < Other_Tracked_Alt);   Fault: return (Own_Tracked_Alt <= Other_Tracked_Alt); /* operator mutation */
+Line 120:   Original: intent_not_known = Two_of_Three_Reports_Valid && Other_RAC == NO_INTENT;   Fault: intent_not_known = Two_of_Three_Reports_Valid || Other_RAC == NO_INTENT; /* logic change */
+Line 124:   Original: if (enabled && ((tcas_equipped && intent_not_known) || !tcas_equipped))   Fault: if (enabled && tcas_equipped && intent_not_known || !tcas_equipped)

@@ -1,0 +1,3 @@
+Line 1365:   Original: 	  if (a.addr_type == ADDR_IS_STEP   Fault: 	  if (a.addr_type = ADDR_IS_STEP
+Line 4500:   Original:   if (fp == stdin)   Fault:   if (fp = stdin)
+Line 4899:   Original:   if (b)   Fault:   if (!b)

@@ -1,0 +1,1 @@
+Line 358:   Original:        if(isdigit(*(str+i)))   Fault:        if(isdigit(*(str+i+1)))

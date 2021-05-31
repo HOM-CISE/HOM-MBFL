@@ -1,0 +1,6 @@
+Line 75:   Original: result = !(Own_Below_Threat()) || ((Own_Below_Threat()) && (!(Down_Separation >= ALIM())));   Fault: result = !(Own_Below_Threat()) || ((Own_Below_Threat()) && (!(Down_Separation > ALIM()))); /* opertor mutation */
+
+Line 79:   Original: result = Own_Above_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Up_Separation >= ALIM());   Fault: result = Own_Above_Threat() && (Cur_Vertical_Sep >= MINSEP) || (Up_Separation >= ALIM()); /* logic change */
+Line 104:   Original: return (Own_Tracked_Alt < Other_Tracked_Alt);   Fault: return (Own_Tracked_Alt <= Other_Tracked_Alt); /* operator mutation */
+Line 118:   Original:   enabled = High_Confidence && (Own_Tracked_Alt_Rate <= OLEV) && (Cur_Vertical_Sep > MAXALTDIFF);   Fault: enabled = High_Confidence && (Own_Tracked_Alt_Rate <= OLEV); /* && (Cur_Vertical_Sep > MAXALTDIFF); missing code */
+Line 124:   Original: if (enabled && ((tcas_equipped && intent_not_known) || !tcas_equipped))   Fault: if (enabled && tcas_equipped && intent_not_known || !tcas_equipped)

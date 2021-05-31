@@ -1,0 +1,3 @@
+Line 1909:   Original:   cur_input.line = 1;   Fault:   cur_input.line = 0;
+Line 2251:   Original:   lb->active = lb->text + inactive;   Fault:   lb->active = lb->text + inactive + 1;
+Line 6977:   Original:   if (error)   Fault:   if (!error)

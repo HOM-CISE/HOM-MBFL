@@ -1,0 +1,4 @@
+Line 33:   Original:         fname= argv[1];   Fault:         fname= argv[0];
+Line 149:   Original:   int id=0;   Fault:   int id=1;
+Line 358:   Original:        if(isdigit(*(str+i)))   Fault:        if(isdigit(*(str+i+1)))
+Line 386:   Original:        return(FALSE);   Fault:      return(TRUE);    /* wrong return value */

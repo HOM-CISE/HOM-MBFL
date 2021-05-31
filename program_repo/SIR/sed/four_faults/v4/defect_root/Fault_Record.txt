@@ -1,0 +1,4 @@
+Line 598:   Original:     countT num = 0;   Fault:  countT num = 1;
+Line 710:   Original:   if (posixicity == POSIXLY_EXTENDED)   Fault:   if (posixicity = POSIXLY_EXTENDED)
+Line 1365:   Original: 	  if (a.addr_type == ADDR_IS_STEP   Fault: 	  if (a.addr_type = ADDR_IS_STEP
+Line 3109:   Original:   bool again = true;   Fault:   bool again = false;

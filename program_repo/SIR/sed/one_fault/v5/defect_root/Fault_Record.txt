@@ -1,0 +1,1 @@
+Line 3349:   Original: 		output_line(cur_cmd->x.cmd_txt.text,			    cur_cmd->x.cmd_txt.text_length - 1, true,   Fault: 		output_line(cur_cmd->x.cmd_txt.text,		    cur_cmd->x.cmd_txt.text_length, true,

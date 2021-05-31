@@ -1,0 +1,4 @@
+Line 1099:   Original:   text_end = base + length;   Fault:   text_end = base + length - 1;
+Line 1605:   Original:             if (mb_cur_max > 1)   Fault:             if (mb_cur_max > 0)
+Line 2513:   Original:   if (b[result - 1] == '\n')   Fault:   if (b[result - 1] = '\n')
+Line 3109:   Original:   bool again = true;   Fault:   bool again = false;

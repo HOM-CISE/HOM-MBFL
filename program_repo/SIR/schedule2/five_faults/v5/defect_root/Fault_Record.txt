@@ -1,0 +1,5 @@
+Line 28:   Original:              Fault:     		 case 12 : /* added code */
+Line 77:   Original:              Fault:     		 case 12 : /* added code */
+Line 135:   Original:              Fault:     		 case 12 : /* added code */
+Line 209:   Original:              Fault:     		 case 12 : /* added code */
+Line 275:   Original:              Fault:     		 case 12 : /* added code */

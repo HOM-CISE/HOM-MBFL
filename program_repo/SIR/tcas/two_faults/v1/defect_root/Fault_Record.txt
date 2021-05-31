@@ -1,0 +1,2 @@
+Line 79:   Original: result = Own_Above_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Up_Separation >= ALIM());   Fault: result = Own_Above_Threat() && (Cur_Vertical_Sep >= MINSEP) || (Up_Separation >= ALIM()); /* logic change */
+Line 118:   Original:   enabled = High_Confidence && (Own_Tracked_Alt_Rate <= OLEV) && (Cur_Vertical_Sep > MAXALTDIFF);   Fault: enabled = High_Confidence && (Own_Tracked_Alt_Rate <= OLEV); /* && (Cur_Vertical_Sep > MAXALTDIFF); missing code */

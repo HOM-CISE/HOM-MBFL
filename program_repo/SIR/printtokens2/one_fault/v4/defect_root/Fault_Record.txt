@@ -1,0 +1,1 @@
+Line 164:   Original:    if(ch ==59)id=2;    /* prepare for comment */   Fault:    if(ch ==59)id=0;    /* prepare for comment */ 

@@ -1,0 +1,1 @@
+Line 2782:   Original:         cur_cmd->range_state = RANGE_INACTIVE;   Fault:       cur_cmd->range_state = RANGE_ACTIVE;

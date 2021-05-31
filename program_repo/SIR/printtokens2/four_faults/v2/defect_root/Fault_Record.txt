@@ -1,0 +1,4 @@
+Line 218:   Original:    { if(ch=='\n')     /* for comment until meet end of line */   Fault:    { if(ch=='\n' || ch==' ')     /* for comment until meet end of line */
+Line 225:   Original:   if(ch ==' ' || ch=='\n' || ch==59) return(TRUE);     Fault:  if(ch ==' ' || ch=='\n' || ch==59 || ch == '\t' /* added code */) return(TRUE); 
+Line 358:   Original:        if(isdigit(*(str+i)))   Fault:        if(isdigit(*(str+i+1)))
+Line 386:   Original:        return(FALSE);   Fault:      return(TRUE);    /* wrong return value */

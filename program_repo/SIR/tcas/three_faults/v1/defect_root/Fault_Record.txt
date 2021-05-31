@@ -1,0 +1,4 @@
+Line 75:   Original: result = !(Own_Below_Threat()) || ((Own_Below_Threat()) && (!(Down_Separation >= ALIM())));   Fault: result = !(Own_Below_Threat()) || ((Own_Below_Threat()) && (!(Down_Separation > ALIM()))); /* opertor mutation */
+
+Line 90:   Original: upward_preferred = Inhibit_Biased_Climb() > Down_Separation;   Fault:     upward_preferred = Inhibit_Biased_Climb() >= Down_Separation; /* operator mutation */
+Line 118:   Original:   enabled = High_Confidence && (Own_Tracked_Alt_Rate <= OLEV) && (Cur_Vertical_Sep > MAXALTDIFF);   Fault: enabled = High_Confidence && (Own_Tracked_Alt_Rate <= OLEV); /* && (Cur_Vertical_Sep > MAXALTDIFF); missing code */

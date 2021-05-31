@@ -1,0 +1,4 @@
+Line 75:   Original:             if (mb_cur_max > 1)   Fault:             if (mb_cur_max > 0)
+Line 85:   Original:             if (mb_cur_max > 1)   Fault:             if (mb_cur_max > 0)
+Line 99:   Original:             if (mb_cur_max > 1)   Fault:             if (mb_cur_max > 0)
+Line 200:   Original:             if (mb_cur_max > 1)   Fault:             if (mb_cur_max > 0)

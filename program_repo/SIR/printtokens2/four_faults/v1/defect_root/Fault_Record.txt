@@ -1,0 +1,4 @@
+Line 164:   Original:    if(ch ==59)id=2;    /* prepare for comment */   Fault:    if(ch ==59)id=0;    /* prepare for comment */
+Line 218:   Original:    { if(ch=='\n')     /* for comment until meet end of line */   Fault:    { if(ch=='\n' || ch==' ')     /* for comment until meet end of line */
+Line 358:   Original:        if(isdigit(*(str+i)))   Fault:        if(isdigit(*(str+i+1)))
+Line 386:   Original:        return(FALSE);   Fault:      return(TRUE);    /* wrong return value */

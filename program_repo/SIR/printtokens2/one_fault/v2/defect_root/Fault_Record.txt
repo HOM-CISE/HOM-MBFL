@@ -1,0 +1,1 @@
+Line 225:   Original:  if(ch ==' ' || ch=='\n' || ch==59) return(TRUE);    Fault:  if(ch ==' ' || ch=='\n' || ch==59 || ch == '\t' /* added code */) return(TRUE); 

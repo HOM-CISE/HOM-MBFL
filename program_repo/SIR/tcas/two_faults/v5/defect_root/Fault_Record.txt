@@ -1,0 +1,2 @@
+Line 72:   Original: upward_preferred = Inhibit_Biased_Climb() > Down_Separation;   Fault: upward_preferred = Inhibit_Biased_Climb() >= Down_Separation;
+Line 97:   Original: result = !(Own_Above_Threat()) || ((Own_Above_Threat()) && (Up_Separation >= ALIM()));   Fault: result = !(Own_Above_Threat()) || ((Own_Above_Threat()) && (Up_Separation > ALIM()));

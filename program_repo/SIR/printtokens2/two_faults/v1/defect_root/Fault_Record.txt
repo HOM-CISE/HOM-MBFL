@@ -1,0 +1,2 @@
+Line 164:   Original:    if(ch ==59)id=2;    /* prepare for comment */   Fault:    if(ch ==59)id=0;    /* prepare for comment */
+Line 386:   Original:        return(FALSE);   Fault:      return(TRUE);    /* wrong return value */
